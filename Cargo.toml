@@ -1,0 +1,21 @@
+[package]
+name = "seo-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = "0.12.9"
+scraper = "0.21.0"
+url = "2.5.3"
+actix-cors = "0.7.0"
+actix-web = "4.9.0"
+serde = { version = "1.0.215", features = ["derive"] }
+sqlx = {version = "0.8.2", features = ["runtime-tokio-native-tls", "postgres", "time", "chrono", "uuid", "bigdecimal"] }
+jsonwebtoken = "9.3.0"
+bcrypt = "0.15.1"
+regex = "1.11.1"
+argon2 = "0.5.3"
+dotenv = "0.15.0"
+serde_json = "1.0.133"
+uuid = { version = "1.11.0", features = ["v4", "serde"] }
+chrono = { version = "0.4.22", features = ["serde"] }
