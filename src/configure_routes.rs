@@ -1,5 +1,6 @@
 use actix_web::web;
-use crate::routes::{analyze_site, login, register};
+use crate::seo_routes::analyze_site;
+use crate::user_routes::{login, register};
 
 pub fn configure_routes(cfg: &mut web::ServiceConfig) {
     cfg

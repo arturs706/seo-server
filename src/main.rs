@@ -5,7 +5,9 @@ use sqlx::{postgres::PgPoolOptions, Pool, Postgres};
 use std::env;
 
 mod configure_routes;
-mod routes;
+mod seo_routes;
+mod user_routes;
+mod seo_prompt_routes;
 
 #[derive(Clone)]
 pub struct AppState {
